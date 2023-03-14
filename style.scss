@@ -1,0 +1,162 @@
+$AbsoluteWhite : hsl(0, 0%, 100%);
+$StatHeading : hsla(0, 0%, 100%, 0.6);
+$MainParagraphs : hsla(0, 0%, 100%, 0.75);
+$CardBackground : hsl(244, 38%, 16%);
+$MainBackground : hsl(233, 47%, 7%);
+$Accent : hsl(277, 64%, 61%);
+$Inter : "Inter", sans-serif;
+$Lexend : "Lexend Deca", sans-serif;
+$DefaultSize : 100px;
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:$MainBackground;
+    justify-content:center;
+}
+
+#MainFrame{
+    position:absolute;
+    background-color:$CardBackground;
+    display:flex;
+    justify-content:right;
+    border-radius:8px;
+    overflow:hidden;
+    width:80%;
+    max-width:1000px;
+    min-width:800px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+#BannerFrame{
+    background-color:$Accent;
+    width:50%;
+    order:2;
+}
+
+#InfoFrame{
+    width:50%;
+    order:1;
+}
+
+#Stats{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:30px;
+    margin:80px;
+}
+
+#Text1{
+    color:$AbsoluteWhite;
+    font-family:$Inter;
+    font-weight:700;
+    font-size:30px;
+    padding-left:40px;
+    padding-top:40px;
+}
+
+#Text2{
+    color:$StatHeading;
+    font-family:$Lexend;
+    font-weight:400;
+    padding-left:40px;
+    padding-top:20px;
+    line-height:30px;
+}
+
+#banner{
+    opacity:0.5;
+    width:100%;
+    height:100%;
+}
+
+#Companies{
+    height:$DefaultSize;
+    width:$DefaultSize;
+}
+
+#Templates{
+    height:$DefaultSize;
+    width:$DefaultSize;
+}
+
+#Queries{
+    height:$DefaultSize;
+    width:$DefaultSize;
+}
+
+#Companies h1, #Templates h1, #Queries h1{
+    color:$AbsoluteWhite;
+    font-family:$Inter;
+    width:$DefaultSize;
+    height:50%;
+}
+
+#Companies p, #Templates p, #Queries p{
+    color:$StatHeading;
+    font-family:$Lexend;
+    width:$DefaultSize;
+    height:50%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #BannerFrame{
+      width:100%;
+      height:30%;
+      order:1;
+    }
+  
+    #InfoFrame{
+      width:100%;
+      height:70%;
+      order:2;
+    }
+  
+    #Stats{
+      align-items:center;
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:5px;
+      margin:0;
+      height:40%;
+    }
+  
+    #MainFrame{
+      position:absolute;
+      flex-direction:column;
+      background-color:hsl(244, 38%, 16%);
+      display:flex;
+      justify-content:center;
+      overflow:hidden;
+      width: 90%;
+      max-width:700px;
+      min-width:300px;
+      height: 95%;
+      max-height: 750px;
+      text-align:center;
+      /*max-height:900px;*/
+      /* transform:translate(-50%,-50%); */
+    }
+  
+    #Text1{
+      padding-left:10px; 
+      padding-right:10px;
+      padding-top:15px; 
+    }
+  
+    #Text2{
+      padding-left:10px;
+      padding-right:10px; 
+      padding-top:15px; 
+      padding-bottom:10px;
+    }
+  }

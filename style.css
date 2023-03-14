@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #090b1a;
+  justify-content: center; }
+
+#MainFrame {
+  position: absolute;
+  background-color: #1b1938;
+  display: flex;
+  justify-content: right;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1000px;
+  min-width: 800px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+#BannerFrame {
+  background-color: #aa5cdb;
+  width: 50%;
+  order: 2; }
+
+#InfoFrame {
+  width: 50%;
+  order: 1; }
+
+#Stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 80px; }
+
+#Text1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 40px;
+  padding-top: 40px; }
+
+#Text2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding-left: 40px;
+  padding-top: 20px;
+  line-height: 30px; }
+
+#banner {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%; }
+
+#Companies {
+  height: 100px;
+  width: 100px; }
+
+#Templates {
+  height: 100px;
+  width: 100px; }
+
+#Queries {
+  height: 100px;
+  width: 100px; }
+
+#Companies h1, #Templates h1, #Queries h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  width: 100px;
+  height: 50%; }
+
+#Companies p, #Templates p, #Queries p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  width: 100px;
+  height: 50%; }
+
+@media screen and (max-width: 768px) {
+  #BannerFrame {
+    width: 100%;
+    height: 30%;
+    order: 1; }
+
+  #InfoFrame {
+    width: 100%;
+    height: 70%;
+    order: 2; }
+
+  #Stats {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    height: 40%; }
+
+  #MainFrame {
+    position: absolute;
+    flex-direction: column;
+    background-color: #1b1938;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 90%;
+    max-width: 700px;
+    min-width: 300px;
+    height: 95%;
+    max-height: 750px;
+    text-align: center;
+    /*max-height:900px;*/
+    /* transform:translate(-50%,-50%); */ }
+
+  #Text1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px; }
+
+  #Text2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
